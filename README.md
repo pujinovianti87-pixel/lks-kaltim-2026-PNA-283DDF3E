@@ -263,13 +263,11 @@ Komponen AWS:
 
 - Python
 - FastAPI
-- SQLAlchemy
 - JWT Authentication
 
 ## Database
 
 - SQLite (Development)
-- PostgreSQL (Production AWS)
 
 ## Containerization
 
