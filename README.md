@@ -166,10 +166,50 @@ lks-project/
 ```
 
 ---
+# Infrastructure as Code (Terraform)
+
+Proyek ini menggunakan Terraform sebagai Infrastructure as Code (IaC) untuk melakukan provisioning dan konfigurasi layanan AWS secara otomatis. Seluruh resource cloud didefinisikan dalam file konfigurasi Terraform sehingga proses deployment dapat dilakukan secara konsisten, terukur, dan dapat direproduksi tanpa konfigurasi manual melalui AWS Console.
+
+Infrastruktur yang dikelola oleh Terraform meliputi:
+
+* Virtual Private Cloud (VPC)
+* Public dan Private Subnet
+* Internet Gateway dan NAT Gateway
+* Security Group dengan prinsip least privilege
+* Amazon RDS (MySQL/PostgreSQL)
+* Amazon S3 Bucket
+* Resource pendukung lainnya yang dibutuhkan aplikasi
+
+Terraform digunakan melalui tahapan:
+
+terraform init
+terraform plan
+terraform apply -auto-approve
+
+Dengan pendekatan ini, seluruh konfigurasi AWS dapat dideploy secara otomatis, terdokumentasi, dan mudah dikelola selama proses pengembangan maupun implementasi pada lingkungan produksi.
+
+```
+```
+# Cloud Platform
+
+Platform cloud yang digunakan adalah Amazon Web Services (AWS).
+
+Layanan AWS yang digunakan dalam proyek ini antara lain:
+
+* Amazon VPC
+* Amazon EC2 / ECS Fargate
+* Amazon RDS
+* Amazon S3
+* Amazon CloudWatch
+* AWS Secrets Manager
+* Amazon Elastic Container Registry (ECR)
+* Application Load Balancer (ALB)
+
+Seluruh konfigurasi infrastruktur dikelola menggunakan Terraform untuk memastikan deployment yang konsisten dan sesuai dengan praktik Infrastructure as Code (IaC).
 
 # Arsitektur AWS (Target Deployment)
 
-Pada implementasi cloud, aplikasi akan dijalankan menggunakan layanan AWS berikut:
+Arsitektur cloud yang dirancang untuk implementasi aplikasi ini menggunakan layanan AWS bweikut:
 
 ```text
 Internet
