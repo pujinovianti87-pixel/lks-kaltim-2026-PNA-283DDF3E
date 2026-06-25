@@ -332,7 +332,7 @@ python -m uvicorn app.main:app --reload
 ## 4. Buka Swagger Documentation
 
 ```text
-http://127.0.0.1:8000/docs
+http://127.0.0.1:9000/docs
 ```
 
 Swagger digunakan untuk:
