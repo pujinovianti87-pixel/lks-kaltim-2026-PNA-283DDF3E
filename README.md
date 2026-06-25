@@ -425,28 +425,10 @@ GET /notifications
 
 ---
 
-# Menjalankan Menggunakan Docker
-
-## Build Image
-
-```bash
-docker build -f docker/Dockerfile -t lks-api .
-```
-
----
-
-## Menjalankan Container
-
-```bash
-docker run -p 8000:8000 lks-api
-```
-
----
-
 ## Akses Aplikasi
 
 ```text
-http://localhost:8000/docs
+http://localhost:9000/docs
 ```
 
 ---
